@@ -2,13 +2,22 @@
 <html>
 <head>
   <title>ThePoorGrammarProgrammer</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application'%>
   <%= csrf_meta_tags %>
-</head>
-<body>
+  <%= javascript_include_tag "application" %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<%= yield %>
+<body>
+  <div class="navbar navbar-default">
+    <div class='container'>
+        stuff
+    </div>
+  </div>
+
+  <div class='container'>
+    <%= yield %>
+  </div>
 
 </body>
 </html>
